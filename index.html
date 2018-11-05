@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Tutor Application Login </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Tutor Application Login</div>
+        <form action="TutorAppServlet"  method="post">
+    <table style="width: 50%">
+                <tr>
+                    <td>UVI ID</td>
+                    <td><input type="number" placeholder="Enter ID" name="UVI_ID" /></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" placeholder="Enter Password" name="UVI_Password"/></td>
+                </tr>
+                <tr>
+                    <td>Remember me</td>
+                    <td><input type="checkbox" name="rememember"/></td>
+                </tr>
+    </table>
+            <input type="submit" value="Login"/>
+        </form>
+    </body>
+</html>
