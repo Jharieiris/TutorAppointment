@@ -44,13 +44,13 @@ public class TutorAppServlet extends HttpServlet {
             int UVI_ID= Integer.parseInt(id);
             String pass= request.getParameter("UVI_Password");
             if (id.length()== 9 & pass.length() <= 16 ){
-                System.out.println ("Welcome the UVI Tutor Appointment App, " + UVI_ID);
+                out.println ("Welcome the UVI Tutor Appointment App, " + UVI_ID);
             }else if (id.length()!=9){
-                System.out.println ("Sorry the ID you put in isn't valid");
+                out.println ("Sorry the ID you put in isn't valid");
             }else if (id.equals("")){
                 System.out.println ("UVI ID can't be empty!");
             }else if (pass.equals("")){
-                System.out.println("Password can't be empty!");
+                out.println("Password can't be empty!");
             }
             out.println("<h1>Servlet TutorAppServlet at " + request.getContextPath() + "</h1>");
             out.println("</body>");
