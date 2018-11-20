@@ -48,7 +48,7 @@ public class TutorAppServlet extends HttpServlet {
             }else if (id.length()!=9){
                 out.println ("Sorry the ID you put in isn't valid");
             }else if (id.equals("")){
-                System.out.println ("UVI ID can't be empty!");
+                out.println ("UVI ID can't be empty!");
             }else if (pass.equals("")){
                 out.println("Password can't be empty!");
             }
